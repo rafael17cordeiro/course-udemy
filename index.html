@@ -5,53 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Design Responsivo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-home.css">
 </head>
 
 <body>
-    <header>
-        <h1>Design Responsivo</h1>
-        <nav>
-            <button>abrir/fechar menu</button>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="portofolio.html">Portofolio</a></li>
-                <li><a href="contato.html">contato</a></li>
+    <header class="cabecalho">
+        <h1 class="logo">Design Responsivo</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">abrir/fechar menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a
+                        class="menu-principal__item"> </li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre Nós</a class="menu-principal__item"></li>
+                <li><a class="menu-principal__item" href="portofolio.html">Portofolio</a class="menu-principal__item">
+                </li>
+                <li><a class="menu-principal__item" href="contato.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Página inicial</h1>
+        <header class="cabecalho-home">
+            <h2 class="cabecalho-home__titulo">Bem Vindo!</h2>
+            <p class="cabecalho-home__subtitulo">Este é o meu Website</p>
+            <a class="cabecalho-home__role" href="#servicos">role para ver mais</a>
+        </header>
+        <section id="servicos" class="servicos">
+            <!--Seçao serviços-->
+            <h2 class="home__titulo">O que fazemos</h2>
+            <section class="servico__item">
+                <img src="img/icone-desenvolvimento-web.png" alt="icone planeta terra">
+                <h3>desemvolvimento web</h3>
+                <p class="servicos__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dignissimos
+                    dicta, vero ut
+                    consectetur ea nulla quibusdam accusantium qui id fugit rem incidunt! Aperiam ipsa dolore soluta
+                    illo? Praesentium, omnis!</p>
+            </section>
+            <section class="servico__item">
+                <img src="img/icone-carrinho-compras.png" alt="">
+                <h3>E-comerce</h3>
+                <p class="servicos__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nulla,
+                    tempora veniam voluptas
+                    nisi laborum assumenda sed vitae, unde harum animi? Saepe eaque, quas repellendus at minus
+                    cupiditate quibusdam enim?</p>
+            </section>
+            <section class="servico__item">
+                <img src="img/icone-cafe.png" alt="">
+                <h3>Café</h3>
+                <p class="servicos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorem
+                    quia velit, mollitia
+                    distinctio, laudantium itaque unde rem accusantium aliquid perspiciatis laborum illo accusamus
+                    aliquam adipisci sequi optio quos? Blanditiis.</p>
+            </section>
+        </section>
+        <!--fim-Seçao serviços-->
+
+        <section>
+            <!--seçao depoimentos-->
+            <h2 class="home__titulo">o que falam de nós</h2>
+            <section>
+                <img src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa x">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae iste, beatae earum
+                    perferendis, dolorem quos vero dolor ipsum dicta reprehenderit maxime laudantium quasi esse
+                    quibusdam a magni optio repellendus?</p>
+                <p>Nome Pessoa - Cargo</p>
+            </section>
+        </section>
+        <!--fim-Seçao depoimentos-->
     </main>
-    <footer>
-        <div>
-            <div>
-                <a href="index.html">Design Responsivo</a>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html" class="logo logo--branco">Design Responsivo</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque repudiandae autem nesciunt
                     nihil dolor itaque. Similique dolore tempora dicta illum, tempore quod, quia nesciunt ducimus ipsa
                     est, fuga alias.</p>
             </div>
-            <div>
-                <h2>Social</h2>
-                <ul>
-                    <li><a target="blank" href="https://twitter.com/">Twitter</a></li>
-                    <li><a target="blank" href="https://instagram.com/">Instagram</a></li>
-                    <li><a target="blank" href="https://facebook.com/">Facebook</a></li>
+            <div class="rodape__coluna">
+                <h2 class="rodape_titulo">Social</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-link__item" href="https://twitter.com/">Twitter</a></li>
+                    <li><a class="rodape__lista-link__item" href="https://instagram.com/">Instagram</a></li>
+                    <li><a class="rodape__lista-link__item" href="https://facebook.com/">Facebook</a></li>
 
                 </ul>
             </div>
-            <div>
-                <h2>links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="portofolio.html">Portofolio</a></li>
-                    <li><a href="contato.html">contato</a></li>
+            <div class="rodape__coluna">
+                <h2 class="rodape_titulo">links</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-link__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-link__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="rodape__lista-link__item" href="portofolio.html">Portofolio</a></li>
+                    <li><a class="rodape__lista-link__item" href="contato.html">contato</a></li>
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="rodape__linha-2">
             todos os direitos reservados-Rafael Cordeiro
         </div>
     </footer>
