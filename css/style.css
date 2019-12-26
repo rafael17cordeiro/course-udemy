@@ -13,8 +13,12 @@ img{
     font-family: "source Sans Pro";
     src:url('../source-sans-pro/SourceSansPro-Bold.otf');
     font-weight: bold;
+}@font-face{
+    font-family: "source Sans Pro";
+    src:url('../source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
 }
-
 body{
     font-family: "Source Sans Pro";
 
